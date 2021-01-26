@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    .zero {
+        width: 100%;
+        height: 300px;
+        background: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          
+       }
+}
+
+.myClass {
+    color: #FF0000;
+}
+.myClass::before {
+    content: "This content is before.";
+    color: #00FF00;
+}
