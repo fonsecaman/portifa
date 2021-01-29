@@ -9,12 +9,11 @@
 
   <body> 
     <h1>teste gsap</h1>
-
           <div class="grid page-transition">
             <div class="zero">um
-              <button >teste</button>
+              <button  class="xabalau" id="button" >teste</button>
             </div>
-            <div class="zero"><a id="button" href="http://www.google.com">dois</a></div>
+            <div class="zero"></div>
             <div class="zero">três</div>
             <div class="zero">QUATRO</div>
             <div class="zero">quinto</div>
@@ -29,7 +28,7 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
       <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
-      <script>
+      <script  type="application/javascript">
 
           const $logo = document.querySelector('.transition__logo');
           const $frameBlack = document.querySelector('.page-transition__black');
@@ -37,8 +36,8 @@
           const $button = document.querySelector('#button');
 
           let tltransition = new TimelineMax({paused:true})
-            .fromTo($frameRed , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
-            .fromTo($frameBlack , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
+            .fromTo($frameRed , 0.8, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
+            .fromTo($frameBlack , 0.8, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
             .fromTo($logo , 1.6, {xPercent: -100, autoAlpha:0 },{xPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
             .set($frameRed, {scaleX:0})
             .to($frameBlack , 2.2, {scaleX: 0, transformOrigin:'right', ease: Power4.easeInOut})
@@ -46,33 +45,29 @@
             $button.addEventListener('click', () => {
             tltransition.play(0);
           });
-</script>
+
+      </script>
+
+      <script  type="application/javascript">
+        const changeTitle = document.querySelector(".xabalau");
 
 
-<script>
-        let links = document.querySelectorAll('a');
-          if (links){
-            links.forEach ((link) => {
-              links.onClick = (e)  => {
-                let.body = document.querySelector('body');
-                e.preventDefault();
-                setTimeout(function () {
-                  if(body.classList.contains('fade-out')) {
-                    console.log("navigation..");
-                      if (!e.srcElement.parent.parentElement.href) {
-                         window.location = e.srcElement.href;
-                      } else {
-                        window.location = e.srcElement.parentElement.href;;
-                      }
-                    } else {
-                      console.log('whoops' , e.srcElement);
-                    }
-                    }, 2000);
-                      body.classList.add('fade-out');
-                    }
-                  });
-                }
-</script>
+        function linksd () {
+          console.log("sdsds");
+          //var url = e.target.href;
+          window.open("interna.html" , "_self");
+          clearInterval(showUp);
+        }
+
+        changeTitle.addEventListener("click", (e) => {
+            showUp = setInterval(linksd, 2100);
+          //myFunction();
+        });        
+
+
+        
+      
+      </script>
 
   </body>
 </html>
