@@ -8,66 +8,116 @@
   </head>
 
   <body> 
-    <h1>teste gsap</h1>
-          <div class="grid page-transition">
-            <div class="zero">um
-              <button  class="xabalau" id="button" >teste</button>
-            </div>
-            <div class="zero"></div>
-            <div class="zero">três</div>
-            <div class="zero">QUATRO</div>
-            <div class="zero">quinto</div>
-            <div class="zero">sexta</div>
+    
+    <header>
+      <div class="header">
+        <div>
+          <a href="#">
+          <div class="hambuguer">
+          <span></span>
+          <span></span>
+          <span></span>
           </div>
+          <p>MENU</p>
+        </a>
+        </div>
 
-            <div class="page-transition__red"></div>
-            <div class="page-transition__black"></div>
-            <div class="transition__logo"> I'M LOGO</div>
+        <div><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 59.8" style="enable-background:new 0 0 200 59.8;" xml:space="preserve">
+          <g>
+            <path class="logoCinza" d="M8.8,19.6H7.7V5H2.6V4h11.2v1h-5V19.6z"></path>
+            <path class="logoCinza" d="M27.4,19.6h-1.1v-7.7h-9.1v7.7h-1.1V4h1.1v6.9h9.1V4h1.1V19.6z"></path>
+            <path class="logoCinza" d="M31.8,19.6V4h1.1v15.6H31.8z"></path>
+            <path class="logoCinza" d="M44.8,14.1h-6.3l-2.2,5.5h-1.2L41.3,4H42l6.1,15.6h-1.2L44.8,14.1z M38.9,13.1h5.6l-2.1-5.6
+              c-0.2-0.4-0.4-1-0.6-1.8C41.5,6.3,41.3,7,41,7.5L38.9,13.1z"></path>
+            <path class="logoCinza" d="M56.5,11.7h5.7v7.1c-1.5,0.6-3.2,1-5.1,1c-2.5,0-4.3-0.7-5.6-2.1s-2-3.4-2-5.9c0-1.6,0.3-3,1-4.2
+              c0.6-1.2,1.6-2.2,2.8-2.8c1.2-0.7,2.6-1,4.2-1c1.7,0,3.2,0.3,4.6,0.9l-0.4,1c-1.3-0.6-2.7-0.9-4.2-0.9c-2.1,0-3.7,0.6-4.9,1.9
+              s-1.8,3-1.8,5.1c0,2.3,0.6,4.1,1.7,5.3c1.1,1.2,2.8,1.8,5,1.8c1.4,0,2.7-0.2,3.7-0.6v-5.5h-4.6v-1.1H56.5z"></path>
+            <path class="logoCinza" d="M79.2,11.8c0,2.5-0.6,4.4-1.9,5.9c-1.2,1.4-2.9,2.2-5.1,2.2s-3.9-0.7-5.1-2.2c-1.2-1.4-1.9-3.4-1.9-5.9
+              s0.6-4.4,1.9-5.8c1.2-1.4,2.9-2.1,5.1-2.1s3.9,0.7,5.1,2.1S79.2,9.3,79.2,11.8z M66.5,11.8c0,2.2,0.5,4,1.5,5.2s2.4,1.8,4.3,1.8
+              s3.3-0.6,4.3-1.8s1.5-2.9,1.5-5.2c0-2.2-0.5-4-1.5-5.2s-2.4-1.8-4.3-1.8S69,5.4,68,6.6S66.5,9.6,66.5,11.8z"></path>
+            <path class="logoPreto" d="M15.8,36.8h10.4v13.6c-1.7,0.6-3.3,0.9-4.8,1.2c-1.5,0.2-3,0.3-4.6,0.3c-4,0-7-1.2-9.1-3.5s-3.1-5.7-3.1-10
+              c0-4.2,1.2-7.5,3.6-9.9s5.8-3.6,10.1-3.6c2.7,0,5.3,0.5,7.8,1.6L24.3,31c-1.9-1-3.9-1.4-6-1.4c-2.4,0-4.3,0.8-5.8,2.4
+              c-1.4,1.6-2.2,3.8-2.2,6.5c0,2.9,0.6,5,1.8,6.5s2.9,2.3,5.1,2.3c1.2,0,2.3-0.1,3.5-0.4v-5.5h-5v-4.6H15.8z"></path>
+            <path class="logoPreto" d="M46.2,51.6L45.5,49h-0.3c-0.6,0.9-1.4,1.7-2.5,2.2S40.4,52,39,52c-2.4,0-4.1-0.6-5.3-1.9
+              c-1.2-1.3-1.8-3.1-1.8-5.5V31.5h5.5v11.7c0,1.4,0.3,2.5,0.8,3.3c0.5,0.7,1.3,1.1,2.5,1.1c1.5,0,2.6-0.5,3.3-1.5s1-2.7,1-5.1v-9.4
+              h5.5v20.1h-4.3V51.6z"></path>
+            <path class="logoPreto" d="M68.9,51.6l-1.1-2.7h-0.1c-0.9,1.2-1.9,2-2.8,2.4c-1,0.4-2.2,0.7-3.8,0.7c-1.9,0-3.4-0.6-4.6-1.7
+              c-1.1-1.1-1.7-2.7-1.7-4.7c0-2.1,0.7-3.7,2.2-4.7s3.7-1.6,6.7-1.7l3.5-0.1v-0.9c0-2-1-3.1-3.1-3.1c-1.6,0-3.5,0.5-5.7,1.5l-1.8-3.7
+              c2.3-1.2,4.9-1.8,7.7-1.8c2.7,0,4.8,0.6,6.2,1.8c1.4,1.2,2.2,3,2.2,5.4v13.4L68.9,51.6L68.9,51.6z M67.3,42.3l-2.1,0.1
+              c-1.6,0-2.8,0.3-3.6,0.9c-0.8,0.5-1.2,1.3-1.2,2.4c0,1.5,0.9,2.3,2.7,2.3c1.3,0,2.3-0.4,3-1.1c0.8-0.7,1.1-1.7,1.1-2.9L67.3,42.3
+              L67.3,42.3z"></path>
+            <path class="logoPreto" d="M83.9,51.6h-5.5v-28h5.5V51.6z"></path>
+            <path class="logoPreto" d="M100.8,31.1c2.4,0,4.2,0.9,5.6,2.8c1.3,1.9,2,4.4,2,7.6c0,3.3-0.7,5.9-2.1,7.7s-3.3,2.7-5.6,2.7
+              c-2.4,0-4.2-0.9-5.5-2.6h-0.4l-0.9,2.2h-4.2V23.6h5.5v6.5c0,0.8-0.1,2.1-0.2,4h0.2C96.4,32.1,98.3,31.1,100.8,31.1z M99,35.5
+              c-1.4,0-2.3,0.4-3,1.2s-0.9,2.2-1,4.1v0.6c0,2.2,0.3,3.7,1,4.6c0.6,0.9,1.7,1.4,3,1.4c1.1,0,2-0.5,2.7-1.6s1-2.5,1-4.5
+              s-0.3-3.5-1-4.4C101.1,36,100.2,35.5,99,35.5z"></path>
+            <path class="logoPreto" d="M122,51.9c-3.2,0-5.8-0.9-7.6-2.7c-1.8-1.8-2.7-4.3-2.7-7.6c0-3.4,0.8-6,2.5-7.8s4-2.8,7-2.8
+              c2.8,0,5,0.8,6.6,2.4c1.6,1.6,2.4,3.8,2.4,6.7v2.7h-12.9c0.1,1.6,0.5,2.8,1.4,3.6c0.9,0.9,2.1,1.3,3.6,1.3c1.2,0,2.4-0.1,3.4-0.4
+              c1.1-0.3,2.2-0.7,3.4-1.2v4.2c-1,0.5-2,0.8-3.1,1.1C124.9,51.8,123.6,51.9,122,51.9z M121.2,35c-1.2,0-2.1,0.4-2.7,1.1
+              c-0.7,0.7-1,1.8-1.1,3.1h7.7c0-1.4-0.4-2.4-1.1-3.1S122.4,35,121.2,35z"></path>
+            <path class="logoPreto" d="M145.8,31.1c0.7,0,1.4,0.1,1.8,0.2l-0.4,5.1c-0.4-0.1-1-0.2-1.6-0.2c-1.7,0-3.1,0.4-4.1,1.3
+              c-1,0.9-1.5,2.2-1.5,3.8v10.2h-5.5v-20h4.1l0.8,3.4h0.3c0.6-1.1,1.5-2,2.5-2.7C143.4,31.5,144.6,31.1,145.8,31.1z"></path>
+            <path class="logoPreto" d="M159.8,47.6c1,0,2.1-0.2,3.4-0.6v4c-1.4,0.6-3,0.9-5,0.9c-2.2,0-3.8-0.6-4.8-1.7s-1.5-2.8-1.5-5v-9.7h-2.6
+              v-2.3l3-1.8l1.6-4.2h3.5v4.3h5.6v4.1h-5.6v9.7c0,0.8,0.2,1.4,0.7,1.7S159.1,47.6,159.8,47.6z"></path>
+            <path class="logoPreto" d="M185.6,41.5c0,3.3-0.9,5.8-2.6,7.7c-1.7,1.8-4.1,2.8-7.2,2.8c-1.9,0-3.6-0.4-5.1-1.3c-1.5-0.8-2.6-2.1-3.4-3.6
+              s-1.2-3.4-1.2-5.5c0-3.3,0.9-5.8,2.6-7.7c1.7-1.8,4.1-2.7,7.2-2.7c1.9,0,3.6,0.4,5.1,1.3c1.5,0.8,2.6,2,3.4,3.6
+              C185.2,37.6,185.6,39.4,185.6,41.5z M171.7,41.5c0,2,0.3,3.5,1,4.5s1.7,1.5,3.2,1.5s2.5-0.5,3.2-1.5s1-2.5,1-4.5s-0.3-3.5-1-4.5
+              c-0.6-1-1.7-1.5-3.2-1.5s-2.5,0.5-3.2,1.5S171.7,39.5,171.7,41.5z"></path>
+          </g>
+          <path class="logoVerde" d="M195.3,42.5L195.3,42.5L195.3,42.5c-2.2,0-3.9,1.8-3.9,4s1.7,3.9,3.9,4l0,0l0,0l0,0l0,0c2.2,0,3.9-1.8,3.9-4
+            S197.5,42.5,195.3,42.5L195.3,42.5L195.3,42.5z M197.5,46.5c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2s1-2.2,2.2-2.2
+            S197.5,45.2,197.5,46.5z"></path>
+          </svg></div>
+        <div>links</div>
+      </div>
+    </header>
 
+    <div class="cover-home">
+      <div class="intro">
+          <div>
+          <h1><span>Thiago</span> Gualberto</h1>
+          <h2>Product Designer</h2>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
 
+    <div id="stage" class="conteudo">
+      <p>
+            A prática cotidiana prova que a determinação clara de objetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a complexidade dos estudos efetuados cumpre um papel essencial na formulação do impacto na agilidade decisória. O que temos que ter sempre em mente é que a expansão dos mercados mundiais promove a alavancagem das diversas correntes de pensamento. No entanto, não podemos esquecer que a estrutura atual da organização assume importantes posições no estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições. Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias.
+    Acima de tudo, é fundamental ressaltar que o surgimento do comércio virtual afeta positivamente a correta previsão de alternativas às soluções ortodoxas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a percepção das dificuldades aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. Todavia, o aumento do diálogo entre os diferentes setores produtivos exige a precisão e a definição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, o entendimento das metas propostas talvez venha a ressaltar a relatividade de todos os recursos funcionais envolvidos. O incentivo ao avanço tecnológico, assim como a necessidade de renovação processual acarreta um processo de reformulação e modernização das condições inegavelmente apropriadas.
+    Neste sentido, o desafiador cenário globalizado prepara-nos para enfrentar situações atípicas decorrentes dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades representa uma abertura para a melhoria das novas proposições. Não obstante, o consenso sobre a necessidade de qualificação ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, o fenômeno da Internet obstaculiza a apreciação da importância das direções preferenciais no sentido do progresso.
+    Ainda assim, existem dúvidas a respeito de como a contínua expansão de nossa atividade pode nos levar a considerar a reestruturação dos métodos utilizados na avaliação de resultados. As experiências acumuladas demonstram que a mobilidade dos capitais internacionais garante a contribuição de um grupo importante na determinação dos níveis de motivação departamental. O cuidado em identificar pontos críticos na valorização de fatores subjetivos estende o alcance e a importância do orçamento setorial.
+    É claro que o comprometimento entre as equipes auxilia a preparação e a composição do retorno esperado a longo prazo. O empenho em analisar a competitividade nas transações comerciais agrega valor ao estabelecimento das formas de ação. Do mesmo modo, o desenvolvimento contínuo de distintas formas de atuação desafia a capacidade de equalização dos procedimentos normalmente adotados. Pensando mais a longo prazo, a consolidação das estruturas não pode mais se dissociar do levantamento das variáveis envolvidas. É importante questionar o quanto o acompanhamento das preferências de consumo possibilita uma melhor visão global do fluxo de informações.
+    Evidentemente, a hegemonia do ambiente político facilita a criação das diretrizes de desenvolvimento para o futuro. No mundo atual, a consulta aos diversos militantes oferece uma interessante oportunidade para verificação dos índices pretendidos. Por conseguinte, o início da atividade geral de formação de atitudes é uma das consequências da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a revolução dos costumes causa impacto indireto na reavaliação das regras de conduta normativas.
+    Podemos já vislumbrar o modo pelo qual a constante divulgação das informações faz parte de um processo de gerenciamento do remanejamento dos quadros funcionais. Desta maneira, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Por outro lado, a crescente influência da mídia deve passar por modificações independentemente do investimento em reciclagem técnica. Caros amigos, a execução dos pontos do programa apresenta tendências no sentido de aprovar a manutenção do sistema de participação geral.
+    As experiências acumuladas demonstram que a valorização de fatores subjetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a competitividade nas transações comerciais estimula a padronização dos procedimentos normalmente adotados. O que temos que ter sempre em mente é que a expansão dos mercados mundiais auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. No entanto, não podemos esquecer que a crescente influência da mídia estende o alcance e a importância de alternativas às soluções ortodoxas.
+    Neste sentido, o desafiador cenário globalizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias. No mundo atual, a revolução dos costumes obstaculiza a apreciação da importância do sistema de participação geral. Por conseguinte, a execução dos pontos do programa aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. A prática cotidiana prova que o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das novas proposições.
+    Assim mesmo, o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes de todos os recursos funcionais envolvidos. Não obstante, a necessidade de renovação processual acarreta um processo de reformulação e modernização dos paradigmas corporativos. Desta maneira, o novo modelo estrutural aqui preconizado apresenta tendências no sentido de aprovar a manutenção do remanejamento dos quadros funcionais.
+    Caros amigos, o surgimento do comércio virtual é uma das consequências das posturas dos órgãos dirigentes com relação às suas atribuições. O incentivo ao avanço tecnológico, assim como o julgamento imparcial das eventualidades ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, a percepção das dificuldades cumpre um papel essencial na formulação das direções preferenciais no sentido do progresso.
+    Todavia, o comprometimento entre as equipes promove a alavancagem dos métodos utilizados na avaliação de resultados. Do mesmo modo, a mobilidade dos capitais internacionais facilita a criação do investimento em reciclagem técnica. O cuidado em identificar pontos críticos na complexidade dos estudos efetuados oferece uma interessante oportunidade para verificação do orçamento setorial. É claro que o aumento do diálogo entre os diferentes setores produtivos pode nos levar a considerar a reestruturação do levantamento das variáveis envolvidas.
+    Acima de tudo, é fundamental ressaltar que a determinação clara de objetivos exige a precisão e a definição das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o entendimento das metas propostas desafia a capacidade de equalização das regras de conduta normativas.
+      </p>
+    </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
-      <script  type="application/javascript">
-
-          const $logo = document.querySelector('.transition__logo');
-          const $frameBlack = document.querySelector('.page-transition__black');
-          const $frameRed = document.querySelector('.page-transition__red');
-          const $button = document.querySelector('#button');
-
-          let tltransition = new TimelineMax({paused:true})
-            .fromTo($frameRed , 0.8, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
-            .fromTo($frameBlack , 0.8, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
-            .fromTo($logo , 1.6, {xPercent: -100, autoAlpha:0 },{xPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
-            .set($frameRed, {scaleX:0})
-            .to($frameBlack , 2.2, {scaleX: 0, transformOrigin:'right', ease: Power4.easeInOut})
-            .to($logo , .2, {autoAlpha:0 },'-=1.2')
-            $button.addEventListener('click', () => {
-            tltransition.play(0);
-          });
-
-      </script>
-
-      <script  type="application/javascript">
-        const changeTitle = document.querySelector(".xabalau");
-
-
-        function linksd () {
-          console.log("sdsds");
-          //var url = e.target.href;
-          window.open("interna.html" , "_self");
-          clearInterval(showUp);
-        }
-
-        changeTitle.addEventListener("click", (e) => {
-            showUp = setInterval(linksd, 2100);
-          //myFunction();
-        });        
-
-
-        
-      
-      </script>
-
+    <div class="outro">
+      <p>
+            A prática cotidiana prova que a determinação clara de objetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a complexidade dos estudos efetuados cumpre um papel essencial na formulação do impacto na agilidade decisória. O que temos que ter sempre em mente é que a expansão dos mercados mundiais promove a alavancagem das diversas correntes de pensamento. No entanto, não podemos esquecer que a estrutura atual da organização assume importantes posições no estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições. Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias.
+    Acima de tudo, é fundamental ressaltar que o surgimento do comércio virtual afeta positivamente a correta previsão de alternativas às soluções ortodoxas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a percepção das dificuldades aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. Todavia, o aumento do diálogo entre os diferentes setores produtivos exige a precisão e a definição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, o entendimento das metas propostas talvez venha a ressaltar a relatividade de todos os recursos funcionais envolvidos. O incentivo ao avanço tecnológico, assim como a necessidade de renovação processual acarreta um processo de reformulação e modernização das condições inegavelmente apropriadas.
+    Neste sentido, o desafiador cenário globalizado prepara-nos para enfrentar situações atípicas decorrentes dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades representa uma abertura para a melhoria das novas proposições. Não obstante, o consenso sobre a necessidade de qualificação ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, o fenômeno da Internet obstaculiza a apreciação da importância das direções preferenciais no sentido do progresso.
+    Ainda assim, existem dúvidas a respeito de como a contínua expansão de nossa atividade pode nos levar a considerar a reestruturação dos métodos utilizados na avaliação de resultados. As experiências acumuladas demonstram que a mobilidade dos capitais internacionais garante a contribuição de um grupo importante na determinação dos níveis de motivação departamental. O cuidado em identificar pontos críticos na valorização de fatores subjetivos estende o alcance e a importância do orçamento setorial.
+    É claro que o comprometimento entre as equipes auxilia a preparação e a composição do retorno esperado a longo prazo. O empenho em analisar a competitividade nas transações comerciais agrega valor ao estabelecimento das formas de ação. Do mesmo modo, o desenvolvimento contínuo de distintas formas de atuação desafia a capacidade de equalização dos procedimentos normalmente adotados. Pensando mais a longo prazo, a consolidação das estruturas não pode mais se dissociar do levantamento das variáveis envolvidas. É importante questionar o quanto o acompanhamento das preferências de consumo possibilita uma melhor visão global do fluxo de informações.
+    Evidentemente, a hegemonia do ambiente político facilita a criação das diretrizes de desenvolvimento para o futuro. No mundo atual, a consulta aos diversos militantes oferece uma interessante oportunidade para verificação dos índices pretendidos. Por conseguinte, o início da atividade geral de formação de atitudes é uma das consequências da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a revolução dos costumes causa impacto indireto na reavaliação das regras de conduta normativas.
+    Podemos já vislumbrar o modo pelo qual a constante divulgação das informações faz parte de um processo de gerenciamento do remanejamento dos quadros funcionais. Desta maneira, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Por outro lado, a crescente influência da mídia deve passar por modificações independentemente do investimento em reciclagem técnica. Caros amigos, a execução dos pontos do programa apresenta tendências no sentido de aprovar a manutenção do sistema de participação geral.
+    As experiências acumuladas demonstram que a valorização de fatores subjetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a competitividade nas transações comerciais estimula a padronização dos procedimentos normalmente adotados. O que temos que ter sempre em mente é que a expansão dos mercados mundiais auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. No entanto, não podemos esquecer que a crescente influência da mídia estende o alcance e a importância de alternativas às soluções ortodoxas.
+    Neste sentido, o desafiador cenário globalizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias. No mundo atual, a revolução dos costumes obstaculiza a apreciação da importância do sistema de participação geral. Por conseguinte, a execução dos pontos do programa aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. A prática cotidiana prova que o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das novas proposições.
+    Assim mesmo, o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes de todos os recursos funcionais envolvidos. Não obstante, a necessidade de renovação processual acarreta um processo de reformulação e modernização dos paradigmas corporativos. Desta maneira, o novo modelo estrutural aqui preconizado apresenta tendências no sentido de aprovar a manutenção do remanejamento dos quadros funcionais.
+    Caros amigos, o surgimento do comércio virtual é uma das consequências das posturas dos órgãos dirigentes com relação às suas atribuições. O incentivo ao avanço tecnológico, assim como o julgamento imparcial das eventualidades ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, a percepção das dificuldades cumpre um papel essencial na formulação das direções preferenciais no sentido do progresso.
+    Todavia, o comprometimento entre as equipes promove a alavancagem dos métodos utilizados na avaliação de resultados. Do mesmo modo, a mobilidade dos capitais internacionais facilita a criação do investimento em reciclagem técnica. O cuidado em identificar pontos críticos na complexidade dos estudos efetuados oferece uma interessante oportunidade para verificação do orçamento setorial. É claro que o aumento do diálogo entre os diferentes setores produtivos pode nos levar a considerar a reestruturação do levantamento das variáveis envolvidas.
+    Acima de tudo, é fundamental ressaltar que a determinação clara de objetivos exige a precisão e a definição das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o entendimento das metas propostas desafia a capacidade de equalização das regras de conduta normativas.
+      </p>
+    </div>
+   
   </body>
 </html>
