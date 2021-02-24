@@ -2,17 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Thiago Gualberto - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body> 
-    
+  <body class="template-black"> 
     <header>
       <div class="header">
-        <div>
-          <a href="#">
+        <!--div>
+          <a class="menu-hambuguer" href="#">
           <div class="hambuguer">
           <span></span>
           <span></span>
@@ -20,9 +21,10 @@
           </div>
           <p>MENU</p>
         </a>
-        </div>
+        </div-->
 
-        <div><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 59.8" style="enable-background:new 0 0 200 59.8;" xml:space="preserve">
+        <!--div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 59.8" style="enable-background:new 0 0 200 59.8;" xml:space="preserve">
           <g>
             <path class="logoCinza" d="M8.8,19.6H7.7V5H2.6V4h11.2v1h-5V19.6z"></path>
             <path class="logoCinza" d="M27.4,19.6h-1.1v-7.7h-9.1v7.7h-1.1V4h1.1v6.9h9.1V4h1.1V19.6z"></path>
@@ -67,57 +69,166 @@
           <path class="logoVerde" d="M195.3,42.5L195.3,42.5L195.3,42.5c-2.2,0-3.9,1.8-3.9,4s1.7,3.9,3.9,4l0,0l0,0l0,0l0,0c2.2,0,3.9-1.8,3.9-4
             S197.5,42.5,195.3,42.5L195.3,42.5L195.3,42.5z M197.5,46.5c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2s1-2.2,2.2-2.2
             S197.5,45.2,197.5,46.5z"></path>
-          </svg></div>
-        <div>links</div>
-      </div>
+          </svg>
+        </div-->
+
+        <!--div>
+          <a href="https://twitter.com/fonsecaman">
+            <img alt="Thiago Gualberto Twitter account" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMyAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyLjk5MTIgMS45NTAyMUMyMi45OTEzIDEuNzczNTcgMjIuOTQ0NiAxLjYwMDA3IDIyLjg1NTggMS40NDczNUMyMi43NjcxIDEuMjk0NjQgMjIuNjM5NCAxLjE2ODE3IDIyLjQ4NTkgMS4wODA4NEMyMi4zMzI0IDAuOTkzNTAyIDIyLjE1ODQgMC45NDg0MTYgMjEuOTgxOCAwLjk1MDE3QzIxLjgwNTIgMC45NTE5MjUgMjEuNjMyMiAxLjAwMDQ2IDIxLjQ4MDQgMS4wOTA4M0MyMC44OTUxIDEuNDM5MjEgMjAuMjY1IDEuNzA2MDEgMTkuNjA3NCAxLjg4MzgzQzE4LjY2ODQgMS4wNzgwNiAxNy40NzA4IDAuNjM3MTI5IDE2LjIzMzQgMC42NDE2MzZDMTQuODc2IDAuNjQzMTk4IDEzLjU3MjMgMS4xNzIyMyAxMi41OTc2IDIuMTE3MDJDMTEuNjIzIDMuMDYxODEgMTEuMDUzNiA0LjM0ODQgMTEuMDA5OCA1LjcwNTEyQzguMzMzNzggNS4yNzgzOCA1LjkwODQzIDMuODgxNjQgNC4xOTYyNSAxLjc4MTI2QzQuMDkzMDggMS42NTYwOSAzLjk2MTMzIDEuNTU3NTcgMy44MTIxMSAxLjQ5NEMzLjY2Mjg4IDEuNDMwNDMgMy41MDA1NiAxLjQwMzY4IDMuMzM4ODMgMS40MTYwMUMzLjE3NzE5IDEuNDI5MzIgMy4wMjEyMiAxLjQ4MTggMi44ODQ0MiAxLjU2ODkyQzIuNzQ3NjIgMS42NTYwMyAyLjYzNDA5IDEuNzc1MTYgMi41NTM2NyAxLjkxNjAxQzIuMTQxMiAyLjYzNTgyIDEuOTA0MyAzLjQ0Mjc2IDEuODYyMjIgNC4yNzEzMUMxLjgyMDE0IDUuMDk5ODYgMS45NzQwNiA1LjkyNjY2IDIuMzExNDggNi42ODQ1NkwyLjMwOTUzIDYuNjg2NTFDMi4xNTc4OCA2Ljc3OTkxIDIuMDMyNzIgNi45MTA2NiAxLjk0NjAzIDcuMDY2MjVDMS44NTkzNSA3LjIyMTg1IDEuODE0MDMgNy4zOTcwOCAxLjgxNDQxIDcuNTc1MTlDMS44MTI1NyA3LjcyMjExIDEuODIxMzkgNy44Njg5OCAxLjg0MDc4IDguMDE0NjRDMS45NDI5MiA5LjI3MjkgMi41MDA1NiAxMC40NTA3IDMuNDA5MTQgMTEuMzI3MUMzLjM0NzUgMTEuNDQ0NiAzLjMwOTg4IDExLjU3MzEgMy4yOTg0OCAxMS43MDUyQzMuMjg3MDggMTEuODM3MyAzLjMwMjEyIDExLjk3MDQgMy4zNDI3MyAxMi4wOTY3QzMuNzM4ODQgMTMuMzMwOCA0LjU4MTIzIDE0LjM3MjcgNS43MDUwNCAxNS4wMTg1QzQuNTYzMjggMTUuNDYgMy4zMzA0NiAxNS42MTQgMi4xMTUxOSAxNS40NjY4QzEuODkwMjYgMTUuNDM4NiAxLjY2MjQyIDE1LjQ4NzYgMS40NjkwNCAxNS42MDU5QzEuMjc1NjYgMTUuNzI0MiAxLjEyODIyIDE1LjkwNDcgMS4wNTA5IDE2LjExNzhDMC45NzM1OTIgMTYuMzMwOSAwLjk3MDk5OSAxNi41NjM5IDEuMDQzNTUgMTYuNzc4N0MxLjExNjEgMTYuOTkzNSAxLjI1OTQ5IDE3LjE3NzIgMS40NTAxOSAxNy4yOTk4QzMuNTQwMjggMTguNjQ2IDUuOTczODcgMTkuMzYxNyA4LjQ1OTk2IDE5LjM2MTNDMTEuMjc5MiAxOS4zOTMgMTQuMDI5OSAxOC40OTIxIDE2LjI4NDIgMTYuNzk4OEMxOC41Mzg1IDE1LjEwNTQgMjAuMTY5OSAxMi43MTQ1IDIwLjkyNDggOS45OTgwMUMyMS4yNzc4IDguODE0NjQgMjEuNDU4MSA3LjU4NjQ4IDIxLjQ2IDYuMzUxNTdDMjEuNDYgNi4yODYxNCAyMS40NiA2LjIxODc2IDIxLjQ1OSA2LjE1MTM4QzIxLjk4MTEgNS41ODgzMSAyMi4zODU1IDQuOTI2NjggMjIuNjQ4NiA0LjIwNTI3QzIyLjkxMTcgMy40ODM4NyAyMy4wMjgyIDIuNzE3MiAyMi45OTEyIDEuOTUwMjFaTTE5LjY4NDUgNS4xNjIxMkMxOS41MTk0IDUuMzU3NDYgMTkuNDM1OCA1LjYwODkxIDE5LjQ1MTEgNS44NjQyN0MxOS40NjA5IDYuMDI5MjcgMTkuNDU5OSA2LjE5NTI3IDE5LjQ1OTkgNi4zNTE1N0MxOS40NTc5IDcuMzk1MTEgMTkuMzA0OSA4LjQzMjg3IDE5LjAwNTggOS40MzI2M0MxOC4zODkzIDExLjc0NCAxNy4wMTUgMTMuNzgxNyAxNS4xMDI5IDE1LjIxOTJDMTMuMTkwOCAxNi42NTY4IDEwLjg1MTYgMTcuNDExMSA4LjQ1OTk2IDE3LjM2MTNDNy42MDA4NCAxNy4zNjE2IDYuNzQ0NjggMTcuMjYwNiA1LjkwOTE4IDE3LjA2MDZDNi45NzQ1OSAxNi43MTcyIDcuOTcwNzcgMTYuMTg3OSA4Ljg1MTU2IDE1LjQ5NzFDOS4wMTM3OCAxNS4zNjkzIDkuMTMyNTEgMTUuMTk0NSA5LjE5MTQ1IDE0Ljk5NjdDOS4yNTAzOCAxNC43OTg4IDkuMjQ2NjQgMTQuNTg3NSA5LjE4MDczIDE0LjM5MThDOS4xMTQ4MyAxNC4xOTYyIDguOTg5OTkgMTQuMDI1NyA4LjgyMzM0IDEzLjkwMzhDOC42NTY2OSAxMy43ODE5IDguNDU2NCAxMy43MTQ1IDguMjQ5OTYgMTMuNzEwOUM3LjQxODc5IDEzLjY5OCA2LjYyNTA5IDEzLjM2MyA2LjAzNjA5IDEyLjc3NjRDNi4xODU1MSAxMi43NDgxIDYuMzMzOTUgMTIuNzEyOSA2LjQ4MTQxIDEyLjY3MDlDNi42OTc0MiAxMi42MDk0IDYuODg2NDUgMTIuNDc3IDcuMDE4MDcgMTIuMjk1QzcuMTQ5NjkgMTIuMTEzMSA3LjIxNjIzIDExLjg5MjEgNy4yMDY5OCAxMS42Njc3QzcuMTk3NzMgMTEuNDQzMyA3LjExMzI0IDExLjIyODUgNi45NjcwOSAxMS4wNThDNi44MjA5NSAxMC44ODc0IDYuNjIxNjcgMTAuNzcxMSA2LjQwMTMzIDEwLjcyNzVDNS45MTg4NyAxMC42MzIzIDUuNDY0ODcgMTAuNDI3IDUuMDc0NjQgMTAuMTI3N0M0LjY4NDQxIDkuODI4NDUgNC4zNjg0NSA5LjQ0MzIxIDQuMTUxMzMgOS4wMDE5NkM0LjMzMjA2IDkuMDI2NjIgNC41MTM5NCA5LjA0MTk0IDQuNjk2MjUgOS4wNDc4NkM0LjkxMjgzIDkuMDUxMTMgNS4xMjQ4NCA4Ljk4NTQzIDUuMzAxNjIgOC44NjAyNkM1LjQ3ODQxIDguNzM1MDkgNS42MTA4IDguNTU2OTQgNS42Nzk2NSA4LjM1MTU3QzUuNzQ1NjMgOC4xNDQzMyA1Ljc0MjIzIDcuOTIxMjMgNS42Njk5OCA3LjcxNjFDNS41OTc3MiA3LjUxMDk2IDUuNDYwNTUgNy4zMzQ5OSA1LjI3OTI2IDcuMjE0ODVDNC44Mzk0MSA2LjkyMTgyIDQuNDc5MSA2LjUyNDI3IDQuMjMwNjEgNi4wNTc4QzMuOTgyMTMgNS41OTEzNCAzLjg1MzIyIDUuMDcwNTIgMy44NTU0MyA0LjU0MjAxQzMuODU1NDMgNC40NzU2MSAzLjg1NzM4IDQuNDA5MiAzLjg2MTI5IDQuMzQzNzdDNi4xMDI1NSA2LjQzNDAyIDkuMDA5NjEgNy42NjYyMSAxMi4wNzAzIDcuODIzMjZDMTIuMjI0OCA3LjgyOTM0IDEyLjM3ODYgNy44MDAyNCAxMi41MjAyIDcuNzM4MTZDMTIuNjYxOCA3LjY3NjA3IDEyLjc4NzUgNy41ODI2MiAxMi44ODc3IDcuNDY0ODZDMTIuOTg2OSA3LjM0NTk2IDEzLjA1NzEgNy4yMDU2NiAxMy4wOTI4IDcuMDU1MDFDMTMuMTI4NiA2LjkwNDM3IDEzLjEyODkgNi43NDc0OCAxMy4wOTM3IDYuNTk2N0MxMy4wMzY1IDYuMzU4MDYgMTMuMDA3MyA2LjExMzU3IDEzLjAwNjggNS44NjgxOEMxMy4wMDc3IDUuMDEyNzEgMTMuMzQ3OSA0LjE5MjU0IDEzLjk1MjggMy41ODc2NEMxNC41NTc3IDIuOTgyNzQgMTUuMzc3OSAyLjY0MjUxIDE2LjIzMzQgMi42NDE2MUMxNi42NzM1IDIuNjQwNDMgMTcuMTA5MSAyLjczMDUgMTcuNTEyNyAyLjkwNjE1QzE3LjkxNjIgMy4wODE4IDE4LjI3OSAzLjMzOTIgMTguNTc4MSAzLjY2MjEyQzE4LjY5MzQgMy43ODYyIDE4LjgzODYgMy44Nzg3MSAxOC45OTk4IDMuOTMwODVDMTkuMTYxIDMuOTgyOTkgMTkuMzMyOCAzLjk5MzAzIDE5LjQ5OSAzLjk2MDAxQzE5LjkwOTcgMy44ODAwNiAyMC4zMTQ2IDMuNzcyNCAyMC43MTA5IDMuNjM3NzVDMjAuNDQwNiA0LjE5MDcyIDIwLjA5NTIgNC43MDM2OSAxOS42ODQ1IDUuMTYyMTJaIiBmaWxsPSIjNTk1OTVCIi8+Cjwvc3ZnPgo=" />          </a>
+          <a href="https://www.linkedin.com/in/thiagogualberto/">
+            <img alt="Thiago Gualberto linkedin profile" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUgNy45OTg5N0MxNS42MDQ3IDcuOTk4NTkgMTQuNzIzMyA4LjIyMDAzIDEzLjkzNDUgOC42NDM1QzEzLjg2MjYgOC40NTM5MyAxMy43MzQ2IDguMjkwNzQgMTMuNTY3NyA4LjE3NTYxQzEzLjQwMDggOC4wNjA0OSAxMy4yMDI3IDcuOTk4ODggMTMgNy45OTg5N0g4Ljk5OTk3QzguODY4NjMgNy45OTg5IDguNzM4NTYgOC4wMjQ3MSA4LjYxNzIgOC4wNzQ5NEM4LjQ5NTg0IDguMTI1MTcgOC4zODU1NyA4LjE5ODgyIDguMjkyNyA4LjI5MTdDOC4xOTk4MiA4LjM4NDU3IDguMTI2MTcgOC40OTQ4NCA4LjA3NTk0IDguNjE2MkM4LjAyNTcxIDguNzM3NTYgNy45OTk5IDguODY3NjMgNy45OTk5NyA4Ljk5ODk3VjIwLjk5OUM3Ljk5OTg5IDIxLjEzMDMgOC4wMjU3MSAyMS4yNjA0IDguMDc1OTQgMjEuMzgxN0M4LjEyNjE2IDIxLjUwMzEgOC4xOTk4MiAyMS42MTM0IDguMjkyNjkgMjEuNzA2MkM4LjM4NTU3IDIxLjc5OTEgOC40OTU4NCAyMS44NzI4IDguNjE3MiAyMS45MjNDOC43Mzg1NiAyMS45NzMyIDguODY4NjMgMjEuOTk5IDguOTk5OTcgMjEuOTk5SDEzQzEzLjEzMTMgMjEuOTk5IDEzLjI2MTQgMjEuOTczMiAxMy4zODI3IDIxLjkyM0MxMy41MDQxIDIxLjg3MjggMTMuNjE0NCAyMS43OTkxIDEzLjcwNzIgMjEuNzA2MkMxMy44MDAxIDIxLjYxMzQgMTMuODczOCAyMS41MDMxIDEzLjkyNCAyMS4zODE3QzEzLjk3NDIgMjEuMjYwNCAxNCAyMS4xMzAzIDE0IDIwLjk5OVYxNS40OTlDMTQgMTUuMjMzOCAxNC4xMDUzIDE0Ljk3OTQgMTQuMjkyOSAxNC43OTE5QzE0LjQ4MDQgMTQuNjA0MyAxNC43MzQ4IDE0LjQ5OSAxNSAxNC40OTlDMTUuMjY1MiAxNC40OTkgMTUuNTE5NSAxNC42MDQzIDE1LjcwNzEgMTQuNzkxOUMxNS44OTQ2IDE0Ljk3OTQgMTYgMTUuMjMzOCAxNiAxNS40OTlWMjAuOTk5QzE1Ljk5OTkgMjEuMTMwMyAxNi4wMjU3IDIxLjI2MDQgMTYuMDc1OSAyMS4zODE3QzE2LjEyNjIgMjEuNTAzMSAxNi4xOTk4IDIxLjYxMzQgMTYuMjkyNyAyMS43MDYyQzE2LjM4NTYgMjEuNzk5MSAxNi40OTU4IDIxLjg3MjggMTYuNjE3MiAyMS45MjNDMTYuNzM4NiAyMS45NzMyIDE2Ljg2ODYgMjEuOTk5IDE3IDIxLjk5OUgyMUMyMS4xMzEzIDIxLjk5OSAyMS4yNjE0IDIxLjk3MzIgMjEuMzgyNyAyMS45MjNDMjEuNTA0MSAyMS44NzI4IDIxLjYxNDQgMjEuNzk5MSAyMS43MDcyIDIxLjcwNjJDMjEuODAwMSAyMS42MTM0IDIxLjg3MzggMjEuNTAzMSAyMS45MjQgMjEuMzgxN0MyMS45NzQyIDIxLjI2MDQgMjIgMjEuMTMwMyAyMiAyMC45OTlWMTMuNDk5QzIxLjk5ODIgMTIuMDQwOCAyMS40MTgxIDEwLjY0MjkgMjAuMzg3MSA5LjYxMTg5QzE5LjM1NiA4LjU4MDgzIDE3Ljk1ODEgOC4wMDA3OCAxNi41IDcuOTk4OTdWNy45OTg5N1pNMjAgMTkuOTk5SDE4VjE1LjQ5OUMxOCAxNC43MDMzIDE3LjY4MzkgMTMuOTQwMyAxNy4xMjEzIDEzLjM3NzdDMTYuNTU4NyAxMi44MTUgMTUuNzk1NiAxMi40OTkgMTUgMTIuNDk5QzE0LjIwNDMgMTIuNDk5IDEzLjQ0MTMgMTIuODE1IDEyLjg3ODYgMTMuMzc3N0MxMi4zMTYgMTMuOTQwMyAxMiAxNC43MDMzIDEyIDE1LjQ5OVYxOS45OTlIOS45OTk5N1Y5Ljk5ODk3SDEyVjEwLjcwMjFDMTIuMDAwMSAxMC45MDkzIDEyLjA2NDUgMTEuMTExNCAxMi4xODQ0IDExLjI4MDRDMTIuMzA0MyAxMS40NDk0IDEyLjQ3MzcgMTEuNTc3IDEyLjY2OTIgMTEuNjQ1NkMxMi44NjQ3IDExLjcxNDIgMTMuMDc2NyAxMS43MjA0IDEzLjI3NTkgMTEuNjYzM0MxMy40NzUxIDExLjYwNjMgMTMuNjUxNyAxMS40ODg4IDEzLjc4MTIgMTEuMzI3MUMxNC4yMyAxMC43NTcxIDE0Ljg0NTYgMTAuMzQxNSAxNS41NDIgMTAuMTM4M0MxNi4yMzg0IDkuOTM1MTQgMTYuOTgwOCA5Ljk1NDQ5IDE3LjY2NTcgMTAuMTkzN0MxOC4zNTA2IDEwLjQzMjkgMTguOTQzNyAxMC44OCAxOS4zNjIxIDExLjQ3MjVDMTkuNzgwNiAxMi4wNjUxIDIwLjAwMzYgMTIuNzczNSAyMCAxMy40OTlWMTkuOTk5Wk01Ljk5OTk3IDcuOTk4OTdIMS45OTk5N0MxLjg2ODYzIDcuOTk4OSAxLjczODU2IDguMDI0NzEgMS42MTcyIDguMDc0OTRDMS40OTU4NCA4LjEyNTE3IDEuMzg1NTcgOC4xOTg4MiAxLjI5MjcgOC4yOTE3QzEuMTk5ODIgOC4zODQ1NyAxLjEyNjE3IDguNDk0ODQgMS4wNzU5NCA4LjYxNjJDMS4wMjU3MSA4LjczNzU2IDAuOTk5ODk2IDguODY3NjMgMC45OTk5NzEgOC45OTg5N1YyMC45OTlDMC45OTk4OTUgMjEuMTMwMyAxLjAyNTcxIDIxLjI2MDQgMS4wNzU5NCAyMS4zODE3QzEuMTI2MTYgMjEuNTAzMSAxLjE5OTgyIDIxLjYxMzQgMS4yOTI2OSAyMS43MDYyQzEuMzg1NTcgMjEuNzk5MSAxLjQ5NTg0IDIxLjg3MjggMS42MTcyIDIxLjkyM0MxLjczODU2IDIxLjk3MzIgMS44Njg2MyAyMS45OTkgMS45OTk5NyAyMS45OTlINS45OTk5N0M2LjEzMTMxIDIxLjk5OSA2LjI2MTM4IDIxLjk3MzIgNi4zODI3NCAyMS45MjNDNi41MDQxIDIxLjg3MjggNi42MTQzNyAyMS43OTkxIDYuNzA3MjUgMjEuNzA2MkM2LjgwMDEyIDIxLjYxMzQgNi44NzM3OCAyMS41MDMxIDYuOTI0MDEgMjEuMzgxN0M2Ljk3NDIzIDIxLjI2MDQgNy4wMDAwNSAyMS4xMzAzIDYuOTk5OTcgMjAuOTk5VjguOTk4OTdDNy4wMDAwNSA4Ljg2NzYzIDYuOTc0MjMgOC43Mzc1NiA2LjkyNCA4LjYxNjJDNi44NzM3NyA4LjQ5NDg0IDYuODAwMTIgOC4zODQ1NyA2LjcwNzI0IDguMjkxN0M2LjYxNDM3IDguMTk4ODIgNi41MDQxIDguMTI1MTcgNi4zODI3NCA4LjA3NDk0QzYuMjYxMzggOC4wMjQ3MSA2LjEzMTMxIDcuOTk4OSA1Ljk5OTk3IDcuOTk4OTdWNy45OTg5N1pNNC45OTk5NyAxOS45OTlIMi45OTk5N1Y5Ljk5ODk3SDQuOTk5OTdWMTkuOTk5Wk00LjAxNDYyIDAuNTQxOTdDMy41NzY5OCAwLjUxNTc3NCAzLjEzODU5IDAuNTc4ODY4IDIuNzI2MSAwLjcyNzQxNUMyLjMxMzYxIDAuODc1OTYyIDEuOTM1NjQgMS4xMDY4NiAxLjYxNTE5IDEuNDA2MDZDMS4yOTQ3MyAxLjcwNTI3IDEuMDM4NDkgMi4wNjY1MyAwLjg2MjAyOSAyLjQ2Nzg3QzAuNjg1NTczIDIuODY5MjEgMC41OTI1OTQgMy4zMDIyNiAwLjU4ODc0NyAzLjc0MDY2QzAuNTg0OTAxIDQuMTc5MDcgMC42NzAyNjggNC42MTM2NyAwLjgzOTY1NiA1LjAxODA1QzEuMDA5MDQgNS40MjI0MyAxLjI1ODkxIDUuNzg4MTMgMS41NzQwNyA2LjA5MjkxQzEuODg5MjIgNi4zOTc2OSAyLjI2MzA4IDYuNjM1MTggMi42NzI5IDYuNzkwOTVDMy4wODI3MiA2Ljk0NjcxIDMuNTE5OTQgNy4wMTc0OCAzLjk1Nzk3IDYuOTk4OTdIMy45ODYyOUM0LjQyNTA5IDcuMDI1MDMgNC44NjQ1OSA2Ljk2MTM1IDUuMjc3OTUgNi44MTE4MkM1LjY5MTMgNi42NjIyOSA2LjA2OTgzIDYuNDMwMDQgNi4zOTAzOSA2LjEyOTI4QzYuNzEwOTYgNS44Mjg1MSA2Ljk2NjgzIDUuNDY1NTQgNy4xNDIzOCA1LjA2MjU1QzcuMzE3OTMgNC42NTk1NSA3LjQwOTQ2IDQuMjI1IDcuNDExMzkgMy43ODU0M0M3LjQxMzMyIDMuMzQ1ODYgNy4zMjU2IDIuOTEwNTIgNy4xNTM1OSAyLjUwNkM2Ljk4MTU4IDIuMTAxNDggNi43Mjg5IDEuNzM2MjggNi40MTA5OSAxLjQzMjcyQzYuMDkzMDcgMS4xMjkxNSA1LjcxNjYgMC44OTM1OTUgNS4zMDQ1NyAwLjc0MDQ0MkM0Ljg5MjU1IDAuNTg3MjkgNC40NTM2MiAwLjUxOTc1NyA0LjAxNDYxIDAuNTQxOTdINC4wMTQ2MlpNMy45ODYzIDQuOTk4OTdIMy45NTc5N0MzLjc4NTA0IDUuMDE5OTcgMy42MDk2MSA1LjAwMzc1IDMuNDQzNDYgNC45NTE0QzMuMjc3MzEgNC44OTkwNSAzLjEyNDI3IDQuODExNzggMi45OTQ2MSA0LjY5NTQzQzIuODY0OTUgNC41NzkwOSAyLjc2MTY3IDQuNDM2MzcgMi42OTE2OCA0LjI3Njg1QzIuNjIxNyA0LjExNzMyIDIuNTg2NjQgMy45NDQ2NyAyLjU4ODg0IDMuNzcwNDhDMi41ODg4NCAzLjAyNDM4IDMuMTQ4NDEgMi41NDE5NiA0LjAxNDYyIDIuNTQxOTZDNC4xODkzMiAyLjUxODY3IDQuMzY2OTggMi41MzMwOSA0LjUzNTY0IDIuNTg0MjRDNC43MDQyOSAyLjYzNTQgNC44NjAwMyAyLjcyMjEgNC45OTIzNiAyLjgzODUxQzUuMTI0NjggMi45NTQ5MiA1LjIzMDUzIDMuMDk4MzQgNS4zMDI3NiAzLjI1OTFDNS4zNzQ5OSAzLjQxOTg2IDUuNDExOTMgMy41OTQyNCA1LjQxMTEgMy43NzA0OEM1LjQxMTEgNC41MTY1NyA0Ljg1MTUzIDQuOTk4OTcgMy45ODYzIDQuOTk4OTdaIiBmaWxsPSIjNTk1OTVCIi8+Cjwvc3ZnPgo=" />
+          </a>
+        </div>
+      </div-->
     </header>
 
-    <div class="cover-home">
-      <div class="intro">
-          <div>
-          <h1><span>Thiago</span> Gualberto</h1>
-          <h2>Product Designer</h2>
+
+    <!--div class="content">
+      
+      <div class="texto">
+        <div class="word">
+          <h2><span>Gualberto</span></h2>
         </div>
+        <div class="word">
+          <h4>Product Designer</h4>
+        </div>          
+          <p>Curiosity made me want to learn HTML so I could put my drawings on the internet. I decided to study Advertising. During my graduation I was able to work as a video editor, working with companies focused on advertising and finally work with digital media. Stimulated by new challenges I kept myself focused on the area. Nowadays, I act as a UX / UI designer and as a front-end merely to keep an update. </p>
+        
+      </div>  
+
+      <div class="foto">
+        <div class="elemento"></div>
+      </div>
+
+    </div-->
+
+    <div style="max-width: 560px; margin: 0 auto;">
+      <h6>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien leo, laoreet a auctor eu, tempus in neque. Etiam feugiat nunc in metus pulvinar ornare. Ut eget felis convallis, mattis neque et, laoreet tellus. Nullam condimentum, urna vel maximus viverra, metus neque auctor enim, at lobortis neque odio nec mi. Vivamus at hendrerit ipsum, a placerat orci. Aenean pharetra ultricies dui sed mattis. Nam laoreet nec purus in dignissim. Vestibulum volutpat orci non nisi varius finibus. Duis sollicitudin mauris tortor, quis efficitur diam tincidunt eget. Proin posuere libero vitae interdum rhoncus. Sed in tortor non augue maximus finibus. Praesent ullamcorper magna nisl, quis rutrum ex imperdiet a. Vestibulum vel velit augue. Proin gravida ut felis in eleifend. Fusce a arcu purus.</p>
+      </h6>
+      <p>
+        Nam suscipit lectus eu pulvinar vulputate. Pellentesque blandit dictum turpis, nec congue odio suscipit id. Integer volutpat ac diam a feugiat. Aenean mollis ante augue, eget hendrerit arcu placerat vitae. Ut hendrerit elit erat, ut pellentesque magna euismod ac. Maecenas nec iaculis lorem. Fusce a metus in felis accumsan maximus vitae id velit. Nullam imperdiet ligula non arcu consectetur vehicula. Suspendisse fringilla blandit lobortis.
+      </p>
+      <p>
+        Nullam rutrum sit amet felis eget convallis. Morbi ex diam, rutrum eget arcu ac, blandit posuere lacus. Aenean laoreet at ligula ac viverra. Donec posuere interdum nulla, nec malesuada justo accumsan vel. Nam eget nisi id tellus condimentum tincidunt. Donec vitae turpis at odio scelerisque congue non non urna. Sed gravida vitae quam ornare accumsan. Ut consequat vulputate finibus. Vestibulum auctor sollicitudin ante, vitae sollicitudin nulla consequat a. Morbi nisl quam, porttitor a auctor eu, blandit a ipsum. Vivamus quam sapien, vulputate vel hendrerit vitae, iaculis vitae lacus. Donec ultrices faucibus ante, nec varius erat viverra at. Vestibulum malesuada ultricies ante. Suspendisse iaculis nisl eros, id pharetra mauris congue vel. Etiam sit amet pellentesque purus. Maecenas elementum efficitur aliquam.
+      </p>
+    </div>
+
+
+    <footer id="embla">
+      <div  class="carousel"><!-- data-flickity='{ "freeScroll": true , "contain": true, "pageDots": false }'  -->
+        <div class="carousel-cell">
+          <div class="card-content">
+            <div class="card">
+              <div class="image">
+                <img src="http://www.thiagogualberto.com/img/logo/dom.png">
+              </div>
+                <div class="text">
+              <small >
+              e-book</small>            
+                <h2>Dom Casmurro</h2>
+                <p>House my Dog team made an internal UX test to improve the app before release.
+            8 People were selected to be part of the test ...</p>      
+              </div>     
+              </div>
+          </div> 
+        </div>
+        
+        <div class="carousel-cell">
+          <div class="card-content">
+            <div class="card">
+              <div class="image ">
+              <img src="http://www.thiagogualberto.com/img/logo/hmd.png">
+              </div>
+
+              <div class="text">
+              <small>APP</small>
+              <h2>House my dog</h2>
+              <p>House my Dog team made an internal UX test to improve the app before release.
+              8 People were selected to be part of the test ...</p>  
+              </div>   
+            </div>
+          </div>           
+        </div>
+      
+        <div class="carousel-cell">
+            <div class="card-content">
+          <div class="card">
+            <div class="image hmd-bg">
+              <img src="http://www.thiagogualberto.com/img/logo/hmd.png">
+            </div>
+            
+              <div class="text">
+            <small>APP</small>
+            <h2>House my dog</h2>
+            <p>House my Dog team made an internal UX test to improve the app before release.
+        8 People were selected to be part of the test ...</p>  
+            </div>    
+             </div>
+        </div> 
+        </div> 
+        
+        <div class="carousel-cell">
+           <div class="card-content">
+          <div class="card">
+            <div class="image">
+              <img src="http://www.thiagogualberto.com/img/logo/dom.png">
+            </div>
+        
+              <div class="text">
+            <small >
+             e-book</small>            
+              <h2>Dom Casmurro</h2>
+              <p>House my Dog team made an internal UX test to improve the app before release.
+          8 People were selected to be part of the test ...</p>      
+            </div>
+             </div>
+        </div> 
+        </div>
+
+      </div>
+
+        <div id=coverup></div>
+    </footer>
+
+    <div class="signature">
+      <div class="dados">
         <div>
+          <small>
+            <span>THIAGO GUALBERTO</span><br>
+            +55 61 99510 9666<br>
+            tdelima@gmail.com          
+          </small>
+        </div>
+        <div></div>
+        <div>
+        <small>A MATHEMATICIAN IS A DEVICE FOR TURNING COFFEE INTO THEOREMS</small>
         </div>
       </div>
-    </div>
+      <p>© Thiago Gualberto. All rights reserved.</p>
+    </div>   
 
-    <div id="stage" class="conteudo">
-      <p>
-            A prática cotidiana prova que a determinação clara de objetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a complexidade dos estudos efetuados cumpre um papel essencial na formulação do impacto na agilidade decisória. O que temos que ter sempre em mente é que a expansão dos mercados mundiais promove a alavancagem das diversas correntes de pensamento. No entanto, não podemos esquecer que a estrutura atual da organização assume importantes posições no estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições. Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias.
-    Acima de tudo, é fundamental ressaltar que o surgimento do comércio virtual afeta positivamente a correta previsão de alternativas às soluções ortodoxas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a percepção das dificuldades aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. Todavia, o aumento do diálogo entre os diferentes setores produtivos exige a precisão e a definição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, o entendimento das metas propostas talvez venha a ressaltar a relatividade de todos os recursos funcionais envolvidos. O incentivo ao avanço tecnológico, assim como a necessidade de renovação processual acarreta um processo de reformulação e modernização das condições inegavelmente apropriadas.
-    Neste sentido, o desafiador cenário globalizado prepara-nos para enfrentar situações atípicas decorrentes dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades representa uma abertura para a melhoria das novas proposições. Não obstante, o consenso sobre a necessidade de qualificação ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, o fenômeno da Internet obstaculiza a apreciação da importância das direções preferenciais no sentido do progresso.
-    Ainda assim, existem dúvidas a respeito de como a contínua expansão de nossa atividade pode nos levar a considerar a reestruturação dos métodos utilizados na avaliação de resultados. As experiências acumuladas demonstram que a mobilidade dos capitais internacionais garante a contribuição de um grupo importante na determinação dos níveis de motivação departamental. O cuidado em identificar pontos críticos na valorização de fatores subjetivos estende o alcance e a importância do orçamento setorial.
-    É claro que o comprometimento entre as equipes auxilia a preparação e a composição do retorno esperado a longo prazo. O empenho em analisar a competitividade nas transações comerciais agrega valor ao estabelecimento das formas de ação. Do mesmo modo, o desenvolvimento contínuo de distintas formas de atuação desafia a capacidade de equalização dos procedimentos normalmente adotados. Pensando mais a longo prazo, a consolidação das estruturas não pode mais se dissociar do levantamento das variáveis envolvidas. É importante questionar o quanto o acompanhamento das preferências de consumo possibilita uma melhor visão global do fluxo de informações.
-    Evidentemente, a hegemonia do ambiente político facilita a criação das diretrizes de desenvolvimento para o futuro. No mundo atual, a consulta aos diversos militantes oferece uma interessante oportunidade para verificação dos índices pretendidos. Por conseguinte, o início da atividade geral de formação de atitudes é uma das consequências da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a revolução dos costumes causa impacto indireto na reavaliação das regras de conduta normativas.
-    Podemos já vislumbrar o modo pelo qual a constante divulgação das informações faz parte de um processo de gerenciamento do remanejamento dos quadros funcionais. Desta maneira, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Por outro lado, a crescente influência da mídia deve passar por modificações independentemente do investimento em reciclagem técnica. Caros amigos, a execução dos pontos do programa apresenta tendências no sentido de aprovar a manutenção do sistema de participação geral.
-    As experiências acumuladas demonstram que a valorização de fatores subjetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a competitividade nas transações comerciais estimula a padronização dos procedimentos normalmente adotados. O que temos que ter sempre em mente é que a expansão dos mercados mundiais auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. No entanto, não podemos esquecer que a crescente influência da mídia estende o alcance e a importância de alternativas às soluções ortodoxas.
-    Neste sentido, o desafiador cenário globalizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias. No mundo atual, a revolução dos costumes obstaculiza a apreciação da importância do sistema de participação geral. Por conseguinte, a execução dos pontos do programa aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. A prática cotidiana prova que o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das novas proposições.
-    Assim mesmo, o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes de todos os recursos funcionais envolvidos. Não obstante, a necessidade de renovação processual acarreta um processo de reformulação e modernização dos paradigmas corporativos. Desta maneira, o novo modelo estrutural aqui preconizado apresenta tendências no sentido de aprovar a manutenção do remanejamento dos quadros funcionais.
-    Caros amigos, o surgimento do comércio virtual é uma das consequências das posturas dos órgãos dirigentes com relação às suas atribuições. O incentivo ao avanço tecnológico, assim como o julgamento imparcial das eventualidades ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, a percepção das dificuldades cumpre um papel essencial na formulação das direções preferenciais no sentido do progresso.
-    Todavia, o comprometimento entre as equipes promove a alavancagem dos métodos utilizados na avaliação de resultados. Do mesmo modo, a mobilidade dos capitais internacionais facilita a criação do investimento em reciclagem técnica. O cuidado em identificar pontos críticos na complexidade dos estudos efetuados oferece uma interessante oportunidade para verificação do orçamento setorial. É claro que o aumento do diálogo entre os diferentes setores produtivos pode nos levar a considerar a reestruturação do levantamento das variáveis envolvidas.
-    Acima de tudo, é fundamental ressaltar que a determinação clara de objetivos exige a precisão e a definição das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o entendimento das metas propostas desafia a capacidade de equalização das regras de conduta normativas.
-      </p>
-    </div>
+    <script>
+      var hambuguer = document.querySelector(".menu-hambuguer");
+      const changeTitle = document.querySelector(".menu-hambuguer");
 
-    <div class="outro">
-      <p>
-            A prática cotidiana prova que a determinação clara de objetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a complexidade dos estudos efetuados cumpre um papel essencial na formulação do impacto na agilidade decisória. O que temos que ter sempre em mente é que a expansão dos mercados mundiais promove a alavancagem das diversas correntes de pensamento. No entanto, não podemos esquecer que a estrutura atual da organização assume importantes posições no estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições. Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias.
-    Acima de tudo, é fundamental ressaltar que o surgimento do comércio virtual afeta positivamente a correta previsão de alternativas às soluções ortodoxas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a percepção das dificuldades aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. Todavia, o aumento do diálogo entre os diferentes setores produtivos exige a precisão e a definição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, o entendimento das metas propostas talvez venha a ressaltar a relatividade de todos os recursos funcionais envolvidos. O incentivo ao avanço tecnológico, assim como a necessidade de renovação processual acarreta um processo de reformulação e modernização das condições inegavelmente apropriadas.
-    Neste sentido, o desafiador cenário globalizado prepara-nos para enfrentar situações atípicas decorrentes dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades representa uma abertura para a melhoria das novas proposições. Não obstante, o consenso sobre a necessidade de qualificação ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, o fenômeno da Internet obstaculiza a apreciação da importância das direções preferenciais no sentido do progresso.
-    Ainda assim, existem dúvidas a respeito de como a contínua expansão de nossa atividade pode nos levar a considerar a reestruturação dos métodos utilizados na avaliação de resultados. As experiências acumuladas demonstram que a mobilidade dos capitais internacionais garante a contribuição de um grupo importante na determinação dos níveis de motivação departamental. O cuidado em identificar pontos críticos na valorização de fatores subjetivos estende o alcance e a importância do orçamento setorial.
-    É claro que o comprometimento entre as equipes auxilia a preparação e a composição do retorno esperado a longo prazo. O empenho em analisar a competitividade nas transações comerciais agrega valor ao estabelecimento das formas de ação. Do mesmo modo, o desenvolvimento contínuo de distintas formas de atuação desafia a capacidade de equalização dos procedimentos normalmente adotados. Pensando mais a longo prazo, a consolidação das estruturas não pode mais se dissociar do levantamento das variáveis envolvidas. É importante questionar o quanto o acompanhamento das preferências de consumo possibilita uma melhor visão global do fluxo de informações.
-    Evidentemente, a hegemonia do ambiente político facilita a criação das diretrizes de desenvolvimento para o futuro. No mundo atual, a consulta aos diversos militantes oferece uma interessante oportunidade para verificação dos índices pretendidos. Por conseguinte, o início da atividade geral de formação de atitudes é uma das consequências da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a revolução dos costumes causa impacto indireto na reavaliação das regras de conduta normativas.
-    Podemos já vislumbrar o modo pelo qual a constante divulgação das informações faz parte de um processo de gerenciamento do remanejamento dos quadros funcionais. Desta maneira, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Por outro lado, a crescente influência da mídia deve passar por modificações independentemente do investimento em reciclagem técnica. Caros amigos, a execução dos pontos do programa apresenta tendências no sentido de aprovar a manutenção do sistema de participação geral.
-    As experiências acumuladas demonstram que a valorização de fatores subjetivos nos obriga à análise das condições financeiras e administrativas exigidas. Gostaria de enfatizar que a competitividade nas transações comerciais estimula a padronização dos procedimentos normalmente adotados. O que temos que ter sempre em mente é que a expansão dos mercados mundiais auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. No entanto, não podemos esquecer que a crescente influência da mídia estende o alcance e a importância de alternativas às soluções ortodoxas.
-    Neste sentido, o desafiador cenário globalizado maximiza as possibilidades por conta dos relacionamentos verticais entre as hierarquias. No mundo atual, a revolução dos costumes obstaculiza a apreciação da importância do sistema de participação geral. Por conseguinte, a execução dos pontos do programa aponta para a melhoria do sistema de formação de quadros que corresponde às necessidades. A prática cotidiana prova que o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das novas proposições.
-    Assim mesmo, o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes de todos os recursos funcionais envolvidos. Não obstante, a necessidade de renovação processual acarreta um processo de reformulação e modernização dos paradigmas corporativos. Desta maneira, o novo modelo estrutural aqui preconizado apresenta tendências no sentido de aprovar a manutenção do remanejamento dos quadros funcionais.
-    Caros amigos, o surgimento do comércio virtual é uma das consequências das posturas dos órgãos dirigentes com relação às suas atribuições. O incentivo ao avanço tecnológico, assim como o julgamento imparcial das eventualidades ainda não demonstrou convincentemente que vai participar na mudança dos modos de operação convencionais. A nível organizacional, a percepção das dificuldades cumpre um papel essencial na formulação das direções preferenciais no sentido do progresso.
-    Todavia, o comprometimento entre as equipes promove a alavancagem dos métodos utilizados na avaliação de resultados. Do mesmo modo, a mobilidade dos capitais internacionais facilita a criação do investimento em reciclagem técnica. O cuidado em identificar pontos críticos na complexidade dos estudos efetuados oferece uma interessante oportunidade para verificação do orçamento setorial. É claro que o aumento do diálogo entre os diferentes setores produtivos pode nos levar a considerar a reestruturação do levantamento das variáveis envolvidas.
-    Acima de tudo, é fundamental ressaltar que a determinação clara de objetivos exige a precisão e a definição das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o entendimento das metas propostas desafia a capacidade de equalização das regras de conduta normativas.
-      </p>
-    </div>
-   
+      let loadingspinner = document.querySelector('.header');
+      //loadingspinner.disabled = false;
+
+      var status = "open";
+
+      //menu
+      changeTitle.addEventListener("click", (e) => {
+          if (status == "open") {
+            loadingspinner.classList.add('cortina');
+            status = "fechado";
+            console.log(status);            
+          } else {
+            loadingspinner.classList.remove('cortina');
+            status = "open";
+            console.log(status);            
+          }
+      });
+    </script>
   </body>
 </html>

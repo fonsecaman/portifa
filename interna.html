@@ -20,48 +20,51 @@
             <div class="zero">sexta</div>
           </div>
 
-            <div class="page-transition__red"></div>
+          <div class="content">
+
+            
+
+          </div>
+
+    <div class="page-transition__red"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script  type="application/javascript">
+
+        const $logo = document.querySelector('.transition__logo');
+        const $frameRed = document.querySelector('.page-transition__red');
+        const $button = document.querySelector('#button');
+
+        let tltransition = new TimelineMax({paused:false})
+        .fromTo($frameRed , 0.8, {scaleY: 1},{scaleY: 0, transformOrigin:'top', ease: Power4.easeInOut},)
+          .fromTo($logo , 1.6, {yPercent: -100, autoAlpha:0 },{yPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
+          .set($frameRed, {scaleY:0})
+          document.addEventListener("load" , (e ) => {
+          tltransition.play(0);
+        });
+
+    </script>
+    <script  type="application/javascript">
+      const changeTitle = document.querySelector(".xabalau");
 
 
+      function linksd () {
+        console.log("sdsds");
+        //var url = e.target.href;
+        window.open("interna.html" , "_self");
+        clearInterval(showUp);
+      }
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
-      <script  type="application/javascript">
-
-          const $logo = document.querySelector('.transition__logo');
-          const $frameRed = document.querySelector('.page-transition__red');
-          const $button = document.querySelector('#button');
-
-          let tltransition = new TimelineMax({paused:false})
-          .fromTo($frameRed , 0.8, {scaleY: 1},{scaleY: 0, transformOrigin:'top', ease: Power4.easeInOut},)
-            .fromTo($logo , 1.6, {yPercent: -100, autoAlpha:0 },{yPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
-            .set($frameRed, {scaleY:0})
-            document.addEventListener("load" , (e ) => {
-            tltransition.play(0);
-          });
-
-      </script>
-
-      <script  type="application/javascript">
-        const changeTitle = document.querySelector(".xabalau");
+      changeTitle.addEventListener("click", (e) => {
+          showUp = setInterval(linksd, 2100);
+        //myFunction();
+      });        
 
 
-        function linksd () {
-          console.log("sdsds");
-          //var url = e.target.href;
-          window.open("interna.html" , "_self");
-          clearInterval(showUp);
-        }
-
-        changeTitle.addEventListener("click", (e) => {
-            showUp = setInterval(linksd, 2100);
-          //myFunction();
-        });        
-
-
-        
       
-      </script>
+    
+    </script>
 
   </body>
 </html>
