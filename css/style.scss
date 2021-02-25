@@ -12,7 +12,23 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  font-size:$s-16;
+  line-height:$s-24;
 }
+
+.wrapper{
+  padding:96px 16px 16px 16px;
+  margin-top: 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper-full{
+  padding:96px 0 16px 0;
+  margin-top: 80px;
+  max-width: 100%;
+}
+
 
 // templates
 .template-black {
