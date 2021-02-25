@@ -3,6 +3,16 @@
 @import 'mixins';
 @import 'reset';
 
+//avoid overscrolling
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
 
 // templates
 .template-black {
@@ -290,8 +300,9 @@ footer {
 .logo-mobile {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyNyAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgMEM1Ljg4NDY0IDAgMCA2LjMgMCAxNEMwIDIxLjcgNS44ODQ2NCAyNy42NSAxMy41IDI4QzIxLjExNTQgMjggMjcgMjEuNyAyNyAxNEMyNyA2LjMgMjEuMTE1NCAwIDEzLjUgMFpNMjEuMTE1NCAxNEMyMS4xMTU0IDE4LjIgMTcuNjUzOSAyMS43IDEzLjUgMjEuN0M5LjM0NjE4IDIxLjcgNS44ODQ2NiAxOC4yIDUuODg0NjYgMTRDNS44ODQ2NiA5LjggOS4zNDYxOCA2LjMgMTMuNSA2LjNDMTcuNjUzOSA2LjMgMjEuMTE1NCA5LjQ1IDIxLjExNTQgMTRaIiBmaWxsPSIjNTVBQzQ3Ii8+Cjwvc3ZnPgo=");
 }
-
-
+.hidden {
+  overflow: hidden;
+}
 @keyframes letter {
   from {
     transform:translateY(100px);  
