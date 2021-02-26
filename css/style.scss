@@ -23,22 +23,32 @@ body {
   margin: 0 auto;
 }
 
-.wrapper-full{
+.grid{
   padding:24px 0 16px 0;
   margin-top: 80px;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;  
-  div {
-    width: 50vw;
+  //max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+  //display: flex;
+  //flex-wrap: wrap;  
+  @include for-size(phone-only) { 
+    grid-template-columns: 1fr;
+  }
+  .thumb {
+    //width: 50vw;
     background: #d5d5d5;
     height: 100vh;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 100%;
-    border: 1px solid red;   
-    flex-direction: column;
-    flex: 2 2; 
+    overflow: hidden;
+    img {
+      transform: translateX(-50%) scale(1.11);
+      background-size: cover;
+      margin-left: 50%;
+      @include for-size(phone-only) { 
+        width: auto;
+        height: 100%;
+       }      
+    }
   }
 }
 
