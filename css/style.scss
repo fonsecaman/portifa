@@ -17,16 +17,29 @@ body {
 }
 
 .wrapper{
-  padding:96px 16px 16px 16px;
+  padding:24px 16px 16px 16px;
   margin-top: 80px;
   max-width: 960px;
   margin: 0 auto;
 }
 
 .wrapper-full{
-  padding:96px 0 16px 0;
+  padding:24px 0 16px 0;
   margin-top: 80px;
   max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;  
+  div {
+    width: 50vw;
+    background: #d5d5d5;
+    height: 100vh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    border: 1px solid red;   
+    flex-direction: column;
+    flex: 2 2; 
+  }
 }
 
 
@@ -131,6 +144,81 @@ body {
 .logoCinza { fill: $gray;}
 .logoVerde { fill: $green;} 
 
+$teste: 100px;
+
+/* cover */
+.cover-home {
+  width: 100%;
+  height:100vh;
+  //transform: translateY(-80px);
+  margin-top: -80px;
+  //border-bottom: 1px solid $black-light;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+
+  .cover-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+  .cover-block:first-child {
+    background: rgb(29, 29, 29);
+    height: 100vh;
+    width: 50vw;
+    flex-wrap: wrap;
+
+    .word {
+      overflow: hidden;
+      h2 {
+        transform:translateY(100px);
+        animation: letter 0.4s cubic-bezier(1,-0.01,0,.99) forwards;
+      }   
+    }
+    
+    
+    div {
+      max-width: 450px;
+      transform: translateY(50px);
+      @include for-size(phone-only) { 
+        transform: translateY(180px) scale(0.8);
+      }
+    }
+    h2 {
+      line-height: $s-48; 
+      letter-spacing: 1px;
+    }
+    span {
+      display: block;  
+      text-transform: uppercase;
+      font-size: $s-24;
+      color: $green;
+    }
+    p {
+      flex-wrap: wrap;
+    }
+  }
+  .cover-block:last-child {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(29, 29, 29);
+  }
+  @include for-size(phone-only) { 
+    display: block;
+    height: auto;
+    .cover-block{
+      display: block;
+    }
+    .cover-block:first-child {
+      height: 100vh;
+      width: 100vw;
+    }
+    .cover-block:last-child {
+      width: 100vw;
+    }    
+  }  
+}
+
 
 /* footer */
 .hmd-bg {
@@ -152,6 +240,9 @@ footer {
     color: $white;
     justify-content: space-evenly;
     align-items: center;
+    @include for-size(phone-only) { 
+      display: block;
+    }
     div {
       max-width: 250px;
     }
@@ -161,9 +252,21 @@ footer {
         font-weight: bold;
         margin-bottom: 8px;
       }
+      @include for-size(phone-only) { 
+        text-align: center;
+        margin: 0 auto 16px auto;        
+      }
     }
     div:last-child {
       text-align: right;
+      @include for-size(phone-only) { 
+        padding-top: 32px;
+        text-align: center;
+        margin: 0 auto;
+        small {
+        color: $gray;
+        }
+      }
     }
   }
   
@@ -220,6 +323,9 @@ footer {
         box-shadow:8px 8px 8px rgba(0,0,0, 0.0);
         background-color: $black-light;
         border: darken(#222222 , 8%);
+        @include for-size(phone-only) {   
+          height: 301px;
+        }
         a{
           display: none;
         } 
@@ -241,13 +347,16 @@ footer {
           position:absolute;
           color:white;
           padding-right:10px;
+          font-family: $text;
           small {
              color:white;
+             font-family: $text;
           }  
           a{
             display: inline;
             color: white;
             cursor: pointer; 
+            font-family: $text;
           }           
         }  
       }
@@ -260,32 +369,52 @@ footer {
         position:absolute;
         padding-right:10px;
         color:#59595B;
+        height: 263px;
+        @include for-size(phone-only) {   
+          padding: 24px;
+          position: relative;
+          transform: translate(0, 0);
+          height: 292px;
+        }
+        &::after {
+          display: block;
+          padding-top: 8px;
+          letter-spacing: 1px;
+          content: 'CHECK IT OUT!';
+          font-size: 16px;
+          //position: absolute;
+          bottom: 0;
+          font-family: $text;          
+          position: absolute;
+        }        
         small {     
           color:$green;
           font-size:16px;
-          margin-bottom:16px;
-          font-family: 'Fira Sans', sans-serif;           
+          margin-bottom:24px;
+          font-family: $text;      
         }
         h2 {
-          font-weight:bold;
+          font-weight:400;
           font-size:32px;
           margin-bottom:0px;
-          font-family: 'Fira Sans', sans-serif;
+          font-family: $title;
+          padding: $s-8 0;
         }
         p {
-          font-size:24px;       
+          font-size:16px;       
           padding-right:10px;
           width: 330px; 
           overflow: hidden;
           text-overflow: clip;   
-          line-height: 32px;   
-          &::after {
-            display: block;
-            padding-top: 8px;
-            letter-spacing: 1px;
-            content: 'CHECK IT OUT!';
+          line-height: 24px;
+          @include for-size(phone-only) {   
             font-size: 16px;
-          }
+            line-height: 24px;
+            width: 250px;
+            overflow: hidden;
+            text-overflow: clip;
+            height: 148px;
+          }          
         }
       }
       .image {
@@ -356,18 +485,7 @@ footer {
   .carousel .carousel-cell .card-content .card .image {
     display: none;
   }
-  .carousel .carousel-cell .card-content .card .text {
-    padding: 24px;
-    position: relative;
-    transform: translate(0, 0);
-  }
-  .carousel .carousel-cell .card-content .card .text p {
-    font-size: 24px;
-    width: 250px;
-    overflow: hidden;
-    text-overflow: clip;
-    line-height: 29px;
-  }
+
 
   .carousel .carousel-cell .card-content .card {
     width: 300px;
@@ -379,20 +497,6 @@ footer {
   }
   .carousel .carousel-cell .card-content {
     width: 300px;
-  }
-
-  .signature .dados {
-    display: block;
-    div {
-    }
-    div:first-child {
-      text-align: center;
-      margin: 0 auto 16px auto;
-    }
-    div:last-child {
-      text-align: center;
-      margin: 0 auto;
-    }
   }
 
 }
